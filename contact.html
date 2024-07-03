@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+        
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="nav-img" src="sup final_1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto" style="padding-left: 20px; padding-top: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link " id="home" aria-current="page" href="index.html">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/cnpvyndp.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:30px;height:30px">
+                        </lord-icon>
+                        Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about" data-link="true" href="about.html">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/aklfruoc.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:30px;height:30px">
+                        </lord-icon>
+                        Media</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active"  id="contact" href="contact.html">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/rsvfayfn.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:30px;height:30px">
+                        </lord-icon>
+                        Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="move"></div>
+    <div class="moveText">Contact</div>
+    <!-- Contact Section -->
+    <section class="contact-section bg-black">
+        <div class="container ">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-6 bg-black text-white">
+                    <h2 id="contact" class="fw-bold mb-4" >Contact Information</h2>
+                    <div  class="contact-info">
+                        <p id="con1"><i class="fas fa-home me-3"></i>Sama St, Cairo, Egypt
+
+                        </p>
+                        <p id="con2"><i class="fas fa-envelope me-3"></i>  justspeakupacademy@gmail.com</p>
+                      
+                        <p id="con3" ><i class="fas fa-print me-3"></i>+201102431690
+
+                        </p>
+                    </div>
+                </div>
+                <!-- Google Map -->
+                <div class="col-lg-6">
+                    <h2 id="location" class="fw-bold mb-4 text-white">Our Location</h2>
+                    <div id="map" class="map-container">
+                        <div id="spinner" class="spinner-container">
+                            <div class="spinner-border" style="filter: invert();" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.8472907508382!2d31.30971897938818!3d29.99353741545236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145839020a2baa4b%3A0x27ccd52c9c151e01!2sSpeakup%20Academy!5e0!3m2!1sar!2seg!4v1718758323140!5m2!1sar!2seg" class="map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address Section -->
+    <section class="address-section bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="fw-bold mb-4">Visit Us</h2>
+                    <p>Our address is located at the heart of the city, accessible by all means of transport. Come visit us during our working hours:</p>
+                    <ul>
+                        <li>Monday - Friday: 9 AM - 6 PM</li>
+                        <li>Saturday: 10 AM - 4 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-light">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-secondary">
+        <!-- Left -->
+       
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="#" class="me-4 text-light">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="me-4 text-light">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="me-4 text-light">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="me-4 text-light">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="me-4 text-light">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="me-4 text-light">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+               
+                <!-- Grid column -->
+
+               
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-light mb-4 fs-5">
+                        Social 
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset" style="text-decoration: none;">Facebook</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset" style="text-decoration: none;">Instgram</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset" style="text-decoration: none;">Twitter</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset" style="text-decoration: none;">Telegram</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div  class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6  class="text-uppercase fw-light mb-4 fs-5">Contact</h6>
+                    <p style="font-size: 20px;"><i  class="fas fa-home me-3" ></i> Sama St, Cairo, Egypt</p>
+                    <p style="font-size: 20px;">
+                        <i class="fas fa-envelope me-3"></i>
+                        justspeakupacademy@gmail.com
+                    </p>
+                    <p style="font-size: 20px;"><i class="fas fa-phone me-3"></i> +201102431690</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(255, 255, 255, 0.1);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">sup.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Google Maps JavaScript API -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location
+            const location = { lat: -25.344, lng: 131.036 };
+            // The map, centered at location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location,
+            });
+            // The marker, positioned at location
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+     <script src="js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" integrity="sha512-O+atZ/gABlcFlpIoLQR04f72qHqZWKwTVsQZHqk/8VE2nrzDlnqhXbnXP7Gh/TyhpPT8tEUm5A580GG8AloHTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+      <script src="splittext-master/splittext.min.js"></script>
+     <script src="script.js"></script>
+    <script src="contact..js"></script>
+</body>
+</html>
